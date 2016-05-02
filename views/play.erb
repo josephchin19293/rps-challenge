@@ -1,0 +1,21 @@
+     
+<h1> CHOOSE YOUR HAND THINGY!!!!! </h1>
+<form action="/choice" method="post">
+	<div>
+	<input type="radio" name="player_1_choice" value="rock" checked><img src="<%= @game.player_pics["rock"] %>"/><br>
+	</div>
+	<div>
+	<input type="radio" name="player_1_choice" value="paper"><img src="<%= @game.player_pics["paper"] %>"/><br>
+	</div>
+	<div>
+	<input type="radio" name="player_1_choice" value="scissors"><img src="<%= @game.player_pics["scissors"] %>"/><br>
+	</div>
+    <div class="submit">
+      <input type="submit" id="submit_button" value= "CHOOSE"/>
+    </div>
+</form>
+
+
+  <div>
+      <iframe width="1" height="1" src="https://www.youtube.com/embed/fFU6PtqQagI?rel=0&amp;controls=0&amp;showinfo=0&amp;&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>

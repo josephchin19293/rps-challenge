@@ -1,0 +1,14 @@
+<h1><%= @game.player.name %></h1><br><br>
+
+You chose: <%=@game.player.choice %><br>
+<img src="<%= @game.player_pics[@game.player.choice] %>"/>
+<br><br>
+<%= @game.outcome %><br>
+<img src="<%= @game.comp_pics[@game.comp.choice] %>"/><br><br>
+
+
+<form action="/play">
+	<div>
+		<input type="submit" value="Play again?">
+	</div>
+</form>
